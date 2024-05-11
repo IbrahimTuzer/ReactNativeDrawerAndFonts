@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import TabNavigator from './TabNavigator';
 import ContactScreen from '../screens/ContactScreen';
 import AboutScreen from '../screens/AboutScreen';
+import Modal from '../screens/Modal';
 
 const Drawer = createDrawerNavigator();
 
@@ -21,6 +22,7 @@ const DrawerNavigator = () => {
         <Drawer.Screen name="Tabs" component={TabNavigator} />
         <Drawer.Screen name="Contact" component={ContactScreen} />
         <Drawer.Screen name="About" component={AboutScreen} />
+        <Drawer.Screen name="Modal" component={Modal} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
